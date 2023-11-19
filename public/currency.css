@@ -1,0 +1,123 @@
+* {
+  font-family: "Mooli", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  cursor: default;
+  box-sizing: border-box;
+}
+body {
+  scroll-behavior: smooth;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 5px 15px 20px;
+  color: blue;
+}
+fieldset {
+  width: 565px;
+  margin-top: 20px;
+  padding: 20px 20px 0px;
+  border: 3px solid #000000a1;
+}
+.rank span {
+  font-size: 40px;
+}
+#rank {
+  font-size: 25px;
+  text-shadow: 1px 1px 3px red;
+}
+img {
+  cursor: grab !important;
+  height: 220px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.rank {
+  font-size: 20px;
+}
+fieldset p {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+h1 {
+  display: inline-block;
+  color: #000000a1 !important;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  font-size: 45px;
+  border-bottom: 2px solid #000000a1;
+}
+fieldset p span {
+  color: red !important;
+  display: block;
+  margin-left: 108px;
+}
+legend {
+  color: #000000a1 !important;
+  font-size: 30px;
+}
+#symbol {
+  font-size: 23px;
+}
+#symbol span {
+  color: red;
+}
+@media screen and (max-width: 600px) {
+  fieldset {
+    width: 376px;
+  }
+}
+footer {
+  cursor: default;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  margin-top: 10px;
+  box-shadow: 0px -4px 40px -2px black;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.footeri {
+  font-size: 25px;
+}
+.footerh3 {
+  font-family: "Playpen Sans", cursive;
+  font-size: 32px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+.boxes {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+.footerbtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  height: 45px;
+  background-color: black;
+  width: 45px;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+.footerbtn:hover {
+  background-color: rgba(128, 128, 128, 0.381);
+}
+.footera {
+  text-decoration: none;
+  color: white;
+}
+.footerp {
+  margin-top: 8px;
+  margin-bottom: 5px;
+}

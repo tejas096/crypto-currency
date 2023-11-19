@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Experience an innovative crypto website driven by REST API technology. Our platform utilizes RESTful APIs to deliver real-time data on cryptocurrency prices, market trends, and trading volumes. Users can access features like live price tracking, historical data analysis. Our APIs seamlessly ensures accurate and reliable information. With an intuitive interface, responsive design, and secure authentication, our website offers a user-friendly experience for both beginners and experienced cryptocurrency enthusiasts. Stay informed about crypto trends and empower your financial journey with our REST API-powered platform."
+    />
+    <meta
+      name="keywords"
+      content="tejas jain,<%for (let i = 0; i < source.length; i++) {%><%=source[i].name.toLowerCase()%>,<%=source[i].name.toLowerCase()%> price,<%}%>"
+    />
+    <meta name="author" content="Tejas Jain" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="shortcut icon"
+      href="https://imgs.search.brave.com/nWRkQ9SYaUMvjKfmim9RUhI2Fh39hL8mjOZsW54fiWc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9wbHVz/cG5nLmNvbS9pbWct/cG5nL21vbmV5LXBu/Zy0tMTY2My5wbmc"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mooli&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Crypto Currency</title>
+    <link rel="stylesheet" href="/main.css" />
+  </head>
+  <body>
+    <div class="search-wrap">
+      <input
+        type="text"
+        id="search"
+        placeholder="Search For Your Currency ..."
+      />
+    </div>
+    <div class="container">
+      <%for (let i = 0; i < source.length; i++) {%>
+      <a href="<%=source[i].market_cap_rank%>/<%=source[i].name%>">
+        <div class="box">
+          <div class="name">
+            <h1><%=source[i].name%></h1>
+          </div>
+          <div class="body">
+            <div class="left">
+              <img src="<%=source[i].image%>" alt="Error" loading="lazy" />
+              <p class="rank">
+                <span># <%=source[i].market_cap_rank%></span> Ranked
+              </p>
+              <p>Crypto Currency</p>
+            </div>
+            <div class="right">
+              <div class="column">
+                <p>Current Price :</p>
+                <p class="diff1 diff">₹ <%=source[i].current_price%></p>
+              </div>
+              <div class="column">
+                <p>Total Amount Invested :</p>
+                <p class="diff2 diff">₹ <%=source[i].market_cap%></p>
+              </div>
+              <div class="column">
+                <p>Price Change In 24hrs :</p>
+                <p class="diff3 diff">
+                  <%=source[i].price_change_percentage_24h%> %
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+      <%}%>
+    </div>
+    <footer>
+      <h3 class="footerh3">Tejas Jain</h3>
+      <div class="boxes">
+        <button class="footerbtn">
+          <a href="#" class="footera"
+            ><i class="footeri fa-brands fa-instagram"></i
+          ></a>
+        </button>
+        <button class="footerbtn">
+          <a href="#" class="footera"
+            ><i class="footeri fa-brands fa-x-twitter"></i
+          ></a>
+        </button>
+        <button class="footerbtn">
+          <a href="#" class="footera"
+            ><i class="footeri fa-brands fa-github"></i
+          ></a>
+        </button>
+        <button class="footerbtn">
+          <a href="#" class="footera"
+            ><i class="footeri fa-brands fa-linkedin"></i
+          ></a>
+        </button>
+        <button class="footerbtn">
+          <a href="#" class="footera"
+            ><i class="footeri fa-regular fa-envelope"></i
+          ></a>
+        </button>
+      </div>
+      <p class="footerp">© 2023 Tejas Jain. All Rights Reserved.</p>
+    </footer>
+    <script src="/main.js"></script>
+  </body>
+</html>

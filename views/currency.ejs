@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<% if (currency) { %>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Experience an innovative crypto website driven by REST API technology. Our platform utilizes RESTful APIs to deliver real-time data on cryptocurrency prices, market trends, and trading volumes. Users can access features like live price tracking, historical data analysis. Our APIs seamlessly ensures accurate and reliable information. With an intuitive interface, responsive design, and secure authentication, our website offers a user-friendly experience for both beginners and experienced cryptocurrency enthusiasts. Stay informed about crypto trends and empower your financial journey with our REST API-powered platform."
+    />
+    <meta name="keywords" content="tejas jain, tejas, <%=currency.name%>" />
+    <meta name="author" content="Tejas Jain" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="<%=currency.image%>" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mooli&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title><%=currency.name%></title>
+    <link rel="stylesheet" href="/currency.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="name">
+        <h1><%=currency.name%></h1>
+      </div>
+      <div class="rank">
+        <p id="rank">
+          <span># <%=currency.market_cap_rank%></span> Ranked Crypto Currency
+        </p>
+      </div>
+      <img src="<%=currency.image%>" alt="ERROR" />
+      <p id="symbol">
+        Symbol Of <%=currency.name%> Is <span>' <%=currency.symbol%> '</span>
+      </p>
+      <div class="price">
+        <fieldset>
+          <legend>
+            &nbsp;&nbsp;&nbsp;<%=currency.name%> Price&nbsp;&nbsp;&nbsp;
+          </legend>
+          <p>Current Price : <span>₹ <%=currency.current_price%></span></p>
+          <p>
+            Highest Price In 24 Hours : <span>₹ <%=currency.high_24h%></span>
+          </p>
+          <p>Lowest Price In 24 Hours : <span>₹ <%=currency.low_24h%></span></p>
+          <p>
+            Price Change In 24 Hours :
+            <span>₹ <%=currency.price_change_24h%></span>
+          </p>
+          <p>
+            Price Change Percentage In 24 Hours :
+            <span><%=currency.price_change_percentage_24h%> %</span>
+          </p>
+        </fieldset>
+      </div>
+      <div class="market_cap">
+        <fieldset>
+          <legend>
+            &nbsp;&nbsp;&nbsp;<%=currency.name%> Market
+            Capital&nbsp;&nbsp;&nbsp;
+          </legend>
+          <p>Total Amount Invested : <span>₹ <%=currency.market_cap%></span></p>
+          <p>
+            Invested Amount Changed In 24 Hours :
+            <span>₹ <%=currency.market_cap_change_24h%></span>
+          </p>
+          <p>
+            Invested Amount Change Percentage In 24 Hours :
+            <span><%=currency.market_cap_change_percentage_24h%> %</span>
+          </p>
+        </fieldset>
+      </div>
+      <div class="supply">
+        <fieldset>
+          <legend>
+            &nbsp;&nbsp;&nbsp;<%=currency.name%> Stocks Supply&nbsp;&nbsp;&nbsp;
+          </legend>
+          <p>Maximum Supply : <span><%=currency.max_supply%></span></p>
+          <p>Total Supply : <span><%=currency.total_supply%></span></p>
+          <p>
+            Circulating Supply : <span><%=currency.circulating_supply%></span>
+          </p>
+          <p>
+            Fully Diluted Valuation :
+            <span>₹ <%=currency.fully_diluted_valuation%></span>
+          </p>
+          <p>
+            Total Volume In 24 Hours : <span>₹ <%=currency.total_volume%></span>
+          </p>
+        </fieldset>
+      </div>
+      <div class="past">
+        <fieldset>
+          <legend>
+            &nbsp;&nbsp;&nbsp;<%=currency.name%> Past&nbsp;&nbsp;&nbsp;
+          </legend>
+          <p>All Time Low : <span>₹ <%=currency.atl%></span></p>
+          <p>
+            All Time Low Date : <span><%=currency.atl_date.slice(0,10)%></span>
+          </p>
+          <p>All Time High : <span>₹ <%=currency.ath%></span></p>
+          <p>
+            All Time High Date : <span><%=currency.ath_date.slice(0,10)%></span>
+          </p>
+        </fieldset>
+      </div>
+    </div>
+    <footer>
+      <h3 class="footerh3">Tejas Jain</h3>
+      <div class="boxes">
+        <button type="button" class="footerbtn">
+          <a href="#" class="footera"
+            ><i class="footeri fa-brands fa-instagram"></i
+          ></a>
+        </button>
+        <button class="footerbtn">
+          <a href="#" class="footera"
+            ><i class="footeri fa-brands fa-x-twitter"></i
+          ></a>
+        </button>
+        <button class="footerbtn">
+          <a href="#" class="footera"
+            ><i class="footeri fa-brands fa-github"></i
+          ></a>
+        </button>
+        <button class="footerbtn">
+          <a href="#" class="footera"
+            ><i class="footeri fa-brands fa-linkedin"></i
+          ></a>
+        </button>
+        <button class="footerbtn">
+          <a href="#" class="footera"
+            ><i class="footeri fa-regular fa-envelope"></i
+          ></a>
+        </button>
+      </div>
+      <p class="footerp">© 2023 Tejas Jain. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
+<% } %>
