@@ -7,9 +7,6 @@
     grid-template-columns: repeat(1, auto);
     place-items: center !important;
   }
-  footer {
-    width: 100vw !important;
-  }
 }
 @media screen and (max-width: 470px) {
   .container {
@@ -22,14 +19,6 @@
   #search {
     width: 110vw !important;
     margin-left: 40px;
-  }
-  footer {
-    width: 110% !important;
-  }
-}
-@media screen and (max-width: 450px) {
-  footer {
-    width: 127% !important;
   }
 }
 body {
@@ -127,56 +116,9 @@ a {
 .box:hover {
   transform: scale(1.05);
 }
-footer {
-  cursor: default;
-  flex-direction: column;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: black;
-  color: white;
-  position: relative;
-  width: 98.62vw;
-  bottom: 0px;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-  margin-top: 30px;
-  box-shadow: 0px -4px 40px -2px black;
-}
-.footeri {
-  font-size: 25px;
-}
-.footerh3 {
-  font-family: "Playpen Sans", cursive;
-  font-size: 32px;
-  margin-top: 12px;
-  margin-bottom: 12px;
-}
 .boxes {
   display: flex;
   gap: 15px;
   align-items: center;
   justify-content: center;
-}
-.footerbtn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  height: 45px;
-  background-color: black;
-  width: 45px;
-  border-radius: 50%;
-  border: 1px solid black;
-}
-.footerbtn:hover {
-  background-color: rgba(128, 128, 128, 0.381);
-}
-.footera {
-  text-decoration: none;
-  color: white;
-}
-.footerp {
-  margin-top: 8px;
-  margin-bottom: 5px;
 }
