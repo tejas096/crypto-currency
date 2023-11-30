@@ -20,10 +20,10 @@ app.get("/", async (req, res) => {
     let source = load.data;
     res.render("main.ejs", { source });
   } catch {
-    try {
-      let source = load.data;
+    let source = load.data;
+    if (source !== "undefined") {
       res.render("main.ejs", { source });
-    } catch {
+    } else {
       res.send("Some Error Occured Please Try Again Later ...");
     }
   }
